@@ -29,7 +29,7 @@ const Pricing = () => {
             </span>
             <br />
             <span className="text-foreground">
-              Por Apenas R$ 97,90
+              Por Apenas R$ 49,90
             </span>
           </h2>
           <p className="text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
@@ -75,12 +75,12 @@ const Pricing = () => {
                 
                 <div className="text-center p-4 md:p-8 bg-gradient-primary rounded-2xl text-white shadow-2xl mt-1.5">
                   <p className="text-xs md:text-base text-white/90 mb-2">
-                    De R$ 297 por apenas
+                    De R$ 197 por apenas
                   </p>
                   
                   <div className="mb-2">
                     <span className="text-4xl sm:text-6xl md:text-7xl font-bold text-white drop-shadow-lg">
-                      R$ 97,90
+                      R$ 49,90
                     </span>
                   </div>
                   
@@ -98,7 +98,7 @@ const Pricing = () => {
                   
                   <div className="mt-3 space-y-0.5">
                     <p className="text-xs md:text-sm text-white/90">
-                      ✓ Todas as atualizações futuras GRÁTIS
+                      ✓ Direito a todas as atualizações futuras
                     </p>
                     <p className="text-xs md:text-sm text-white/90">
                       ✓ Sem mensalidades, pague uma vez só
