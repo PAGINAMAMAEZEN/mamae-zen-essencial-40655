@@ -7,6 +7,7 @@ import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import SocialProofNotifications from "@/components/SocialProofNotifications";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <FAQ />
       <FinalCTA />
       <Footer />
+      <SocialProofNotifications />
     </main>
   );
 };
