@@ -109,19 +109,26 @@ const Pricing = () => {
 
               {/* Monthly Option */}
               <div className="text-center p-4 md:p-6 bg-primary/5 backdrop-blur rounded-2xl border-2 border-primary/30 shadow-lg">
-                <p className="text-xs md:text-base text-muted-foreground mb-1.5">
+                <p className="text-xs md:text-base text-muted-foreground mb-2">
                   Prefere pagar mensalmente?
                 </p>
                 
-                <div className="mb-1.5">
-                  <span className="text-2xl md:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                    R$ 37,90
-                  </span>
-                  <span className="text-sm md:text-lg text-muted-foreground">/mês</span>
+                <div className="mb-2">
+                  <div className="inline-flex items-baseline gap-1">
+                    <span className="text-lg md:text-2xl font-medium text-muted-foreground line-through">
+                      R$ 49,90
+                    </span>
+                  </div>
+                  <div className="mt-1">
+                    <span className="text-3xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+                      R$ 37,90
+                    </span>
+                    <span className="text-base md:text-lg text-muted-foreground">/mês</span>
+                  </div>
                 </div>
                 
-                <p className="text-xs md:text-sm text-muted-foreground mb-3">
-                  Após 1º mês: R$ 49,90/mês
+                <p className="text-xs md:text-sm text-muted-foreground mb-4">
+                  Preço promocional de lançamento
                 </p>
                 
                 <Button 
