@@ -114,21 +114,21 @@ const Pricing = () => {
                 </p>
                 
                 <div className="mb-2">
-                  <div className="inline-flex items-baseline gap-1">
+                  <div className="inline-flex items-baseline gap-1 justify-center">
                     <span className="text-lg md:text-2xl font-medium text-muted-foreground line-through">
-                      R$ 49,90
+                      R$ 29,90
                     </span>
                   </div>
                   <div className="mt-1">
                     <span className="text-3xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                      R$ 37,90
+                      R$ 19,99
                     </span>
                     <span className="text-base md:text-lg text-muted-foreground">/mês</span>
                   </div>
                 </div>
                 
                 <p className="text-xs md:text-sm text-muted-foreground mb-4">
-                  Preço promocional de lançamento
+                  Após o primeiro período: R$ 29,90/mês
                 </p>
                 
                 <Button 
@@ -136,7 +136,7 @@ const Pricing = () => {
                   className="w-full text-xs md:text-base py-4 md:py-6 bg-gradient-primary text-white hover:scale-105 transition-all shadow-lg rounded-xl font-bold border-0"
                   onClick={() => window.open('https://pay.kirvano.com/d5b9bd49-16d8-4039-b097-0c428eb0b0f5', '_blank')}
                 >
-                  💝 Começar por R$ 37,90/mês
+                  💝 Começar por R$ 19,99/mês
                 </Button>
               </div>
 
