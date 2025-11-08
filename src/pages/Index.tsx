@@ -13,9 +13,19 @@ import Footer from "@/components/Footer";
 import SocialProofNotifications from "@/components/SocialProofNotifications";
 import { useCartAbandonment } from "@/hooks/useCartAbandonment";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
-  const { hasAbandonedCart } = useCartAbandonment();
+  const { hasAbandonedCart, checkAndRedirect } = useCartAbandonment();
+  const navigate = useNavigate();
+
+  // Check if user should be redirected to recovery funnel
+  useEffect(() => {
+    const redirectPath = checkAndRedirect();
+    if (redirectPath) {
+      navigate(redirectPath);
+    }
+  }, [checkAndRedirect, navigate]);
 
   useEffect(() => {
     // Track page view and engagement

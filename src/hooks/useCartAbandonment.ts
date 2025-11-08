@@ -24,6 +24,23 @@ export const useCartAbandonment = () => {
     setCartData(data);
   };
 
+  // Check for abandoned cart and redirect to recovery
+  const checkAndRedirect = () => {
+    const savedCart = localStorage.getItem('mamaeZenCart');
+    if (savedCart) {
+      const data: CartData = JSON.parse(savedCart);
+      const minutesSinceAbandonment = (Date.now() - data.timestamp) / (1000 * 60);
+      
+      // If cart was abandoned recently (less than 30 minutes)
+      if (minutesSinceAbandonment < 30) {
+        setHasAbandonedCart(true);
+        setCartData(data);
+        return '/recuperacao-1';
+      }
+    }
+    return null;
+  };
+
   // Check for abandoned cart
   useEffect(() => {
     const checkAbandonedCart = () => {
@@ -63,6 +80,7 @@ export const useCartAbandonment = () => {
     hasAbandonedCart,
     cartData,
     saveCartIntent,
-    clearCart
+    clearCart,
+    checkAndRedirect
   };
 };

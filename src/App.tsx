@@ -8,6 +8,9 @@ import Quiz from "./pages/Quiz";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
+import CartRecovery1 from "./pages/CartRecovery1";
+import CartRecovery2 from "./pages/CartRecovery2";
+import ThankYou from "./pages/ThankYou";
 import "./i18n/config";
 
 const queryClient = new QueryClient();
@@ -21,6 +24,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/quiz" element={<Quiz />} />
+          <Route path="/recuperacao-1" element={<CartRecovery1 />} />
+          <Route path="/recuperacao-2" element={<CartRecovery2 />} />
+          <Route path="/obrigado" element={<ThankYou />} />
           <Route path="/privacidade" element={<PrivacyPolicy />} />
           <Route path="/termos" element={<TermsOfUse />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
