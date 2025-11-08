@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Shield, Sparkles } from "lucide-react";
+import { useCartAbandonment } from "@/hooks/useCartAbandonment";
+import { useState, useEffect } from "react";
 
 const includes = [
   "Guias Práticos Completos",
@@ -14,6 +16,33 @@ const includes = [
 ];
 
 const Pricing = () => {
+  const { saveCartIntent } = useCartAbandonment();
+  const [userCity, setUserCity] = useState<string>("");
+  const [userState, setUserState] = useState<string>("");
+
+  useEffect(() => {
+    // Get user's location from IP
+    fetch("https://ipapi.co/json/")
+      .then(res => res.json())
+      .then(data => {
+        if (data.city) {
+          setUserCity(data.city);
+          setUserState(data.region_code || "BR");
+        }
+      })
+      .catch(() => {
+        // If geolocation fails, continue normally
+      });
+  }, []);
+
+  const handlePlanClick = (plan: 'lifetime' | 'monthly', url: string) => {
+    // Save cart intent for recovery
+    saveCartIntent(plan, userCity, userState);
+    
+    // Open payment page
+    window.open(url, '_blank');
+  };
+
   return (
     <section id="oferta" className="py-6 md:py-20 px-3 bg-gradient-hero">
       <div className="container mx-auto max-w-6xl">
@@ -91,7 +120,7 @@ const Pricing = () => {
                   <Button 
                     size="lg" 
                     className="w-full text-sm md:text-lg py-5 md:py-7 bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all shadow-xl font-bold rounded-xl border-0"
-                    onClick={() => window.open('https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054', '_blank')}
+                    onClick={() => handlePlanClick('lifetime', 'https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054')}
                   >
                     ✨ Garantir Acesso Vitalício Agora
                   </Button>
@@ -134,7 +163,7 @@ const Pricing = () => {
                 <Button 
                   size="lg" 
                   className="w-full text-xs md:text-base py-4 md:py-6 bg-gradient-primary text-white hover:scale-105 transition-all shadow-lg rounded-xl font-bold border-0"
-                  onClick={() => window.open('https://pay.kirvano.com/d5b9bd49-16d8-4039-b097-0c428eb0b0f5', '_blank')}
+                  onClick={() => handlePlanClick('monthly', 'https://pay.kirvano.com/d5b9bd49-16d8-4039-b097-0c428eb0b0f5')}
                 >
                   💝 Começar por R$ 19,99/mês
                 </Button>

@@ -113,17 +113,17 @@ const SocialProofNotifications = () => {
       setIsVisible(true);
       setNotificationCount(prev => prev + 1);
 
-      // Hide after 5 seconds
+      // Hide after 8 seconds
       setTimeout(() => {
         setIsVisible(false);
-      }, 5000);
+      }, 8000);
     };
 
-    // Show first notification after 3 seconds
-    const initialTimeout = setTimeout(showNotification, 3000);
+    // Show first notification after 8 seconds
+    const initialTimeout = setTimeout(showNotification, 8000);
 
-    // Show new notification every 15 seconds
-    const interval = setInterval(showNotification, 15000);
+    // Show new notification every 45 seconds (more realistic)
+    const interval = setInterval(showNotification, 45000);
 
     return () => {
       clearTimeout(initialTimeout);

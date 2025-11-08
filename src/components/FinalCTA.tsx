@@ -1,8 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Heart } from "lucide-react";
+import { useCartAbandonment } from "@/hooks/useCartAbandonment";
+import { useState, useEffect } from "react";
 
 const FinalCTA = () => {
+  const { saveCartIntent } = useCartAbandonment();
+  const [userCity, setUserCity] = useState<string>("");
+  const [userState, setUserState] = useState<string>("");
+
+  useEffect(() => {
+    fetch("https://ipapi.co/json/")
+      .then(res => res.json())
+      .then(data => {
+        if (data.city) {
+          setUserCity(data.city);
+          setUserState(data.region_code || "BR");
+        }
+      })
+      .catch(() => {});
+  }, []);
+
   const scrollToOffer = () => {
+    saveCartIntent('lifetime', userCity, userState);
     document.getElementById('oferta')?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -41,7 +60,7 @@ const FinalCTA = () => {
             <p>✓ Acesso imediato após a compra</p>
             <p>✓ Garantia incondicional de 7 dias</p>
             <p>✓ Suporte dedicado em português</p>
-            <p>✓ Apenas R$ 97,90 • Pagamento único</p>
+            <p>✓ Apenas R$ 49,90 • Pagamento único</p>
           </div>
         </div>
       </div>
