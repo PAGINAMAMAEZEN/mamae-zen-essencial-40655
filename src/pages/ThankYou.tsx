@@ -60,7 +60,7 @@ const ThankYou = () => {
             </div>
             
             <p className="text-primary font-semibold text-xl">
-              Você está fazendo um ótimo trabalho, mamãe! 🌟
+              Você está fazendo um ótimo trabalho, mamãe!
             </p>
             
             <div className="pt-6">

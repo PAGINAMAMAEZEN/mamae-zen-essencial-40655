@@ -135,7 +135,7 @@ const CartRecovery1 = () => {
             className="w-full text-xl py-8 bg-gradient-primary text-white hover:scale-105 transition-all shadow-xl font-bold"
             onClick={handleContinue}
           >
-            ✨ Sim! Quero Ter Paz e Segurança Agora
+            Sim! Quero Ter Paz e Segurança Agora
           </Button>
           
           <button

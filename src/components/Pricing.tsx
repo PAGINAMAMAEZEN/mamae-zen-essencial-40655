@@ -110,7 +110,7 @@ const Pricing = () => {
               {/* Lifetime Access - Primary Option */}
               <div className="relative mt-3 md:mt-0">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-white px-3 py-1 rounded-full text-xs md:text-sm font-bold shadow-lg z-10 whitespace-nowrap">
-                  ⭐ ACESSO VITALÍCIO
+                  ACESSO VITALÍCIO
                 </div>
                 
                 <div className="text-center p-4 md:p-8 bg-gradient-primary rounded-2xl text-white shadow-2xl mt-1.5">
@@ -133,7 +133,7 @@ const Pricing = () => {
                     className="w-full text-sm md:text-lg py-5 md:py-7 bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all shadow-xl font-bold rounded-xl border-0 px-4"
                     onClick={() => handlePlanClick('lifetime', 'https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054')}
                   >
-                    ✨ Garantir Acesso Vitalício Agora
+                    Garantir Acesso Vitalício Agora
                   </Button>
                   
                   <div className="mt-3 space-y-0.5">
@@ -206,7 +206,7 @@ const Pricing = () => {
         {/* Social Proof */}
         <div className="mt-6 md:mt-12 text-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
           <p className="text-xs md:text-base text-muted-foreground mb-3 px-2">
-            ✨ Mais de 10.000 mães já transformaram suas maternidades
+            Mais de 10.000 mães já transformaram suas maternidades
           </p>
           <div className="flex items-center justify-center gap-2 flex-wrap px-2">
             <div className="flex -space-x-2">

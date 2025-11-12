@@ -52,7 +52,7 @@ const FinalCTA = () => {
               className="bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all text-sm md:text-lg px-5 md:px-8 py-5 md:py-7 shadow-xl font-bold w-full sm:w-auto border-0"
               onClick={scrollToOffer}
             >
-              ✨ Sim, Quero Acesso Vitalício Agora
+              Sim, Quero Acesso Vitalício Agora
             </Button>
           </div>
 

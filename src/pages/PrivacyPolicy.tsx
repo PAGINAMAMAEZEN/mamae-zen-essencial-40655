@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4">✨ O Que Coletamos</h2>
+              <h2 className="text-2xl font-bold mb-4">O Que Coletamos</h2>
               <p className="text-foreground/80 mb-4">
                 Para oferecer a melhor experiência possível, coletamos apenas o essencial:
               </p>
@@ -72,7 +72,7 @@ const PrivacyPolicy = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4">🌟 Seus Direitos</h2>
+              <h2 className="text-2xl font-bold mb-4">Seus Direitos</h2>
               <p className="text-foreground/80 mb-4">
                 Você tem controle total sobre seus dados:
               </p>

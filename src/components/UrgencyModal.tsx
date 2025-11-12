@@ -139,7 +139,7 @@ export const UrgencyModal = ({ open, onOpenChange, onConfirm }: UrgencyModalProp
                   className="w-full text-lg py-6 bg-gradient-primary hover:scale-105 transition-all shadow-xl font-bold"
                   onClick={onConfirm}
                 >
-                  ✨ Garantir Minha Vaga Agora
+                  Garantir Minha Vaga Agora
                 </Button>
                 
                 <p className="text-center text-xs text-muted-foreground">
