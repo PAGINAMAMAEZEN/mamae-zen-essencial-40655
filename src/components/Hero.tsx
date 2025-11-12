@@ -71,7 +71,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-2.5 md:gap-4 justify-center lg:justify-start items-stretch sm:items-center">
               <Button 
                 size="lg" 
-                className="text-sm md:text-lg px-5 md:px-8 py-5 md:py-7 bg-gradient-primary text-white hover:scale-105 transition-all shadow-xl font-bold w-full sm:w-auto border-0"
+                className="text-sm md:text-lg px-4 md:px-8 py-5 md:py-7 bg-gradient-primary text-white hover:scale-105 transition-all shadow-xl font-bold w-full sm:w-auto border-0"
                 onClick={scrollToOffer}
               >
                 ✨ Quero Acesso Vitalício
@@ -79,7 +79,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="text-sm md:text-lg px-5 md:px-8 py-5 md:py-7 border-2 border-primary/30 bg-primary/5 hover:bg-primary/10 text-foreground w-full sm:w-auto"
+                className="text-sm md:text-lg px-4 md:px-8 py-5 md:py-7 border-2 border-primary/30 bg-primary/5 hover:bg-primary/10 text-foreground w-full sm:w-auto"
                 onClick={() => document.getElementById('modulos')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Conhecer os Módulos

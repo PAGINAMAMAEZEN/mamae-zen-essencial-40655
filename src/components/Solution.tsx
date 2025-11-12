@@ -119,7 +119,7 @@ const Solution = () => {
 
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all text-base md:text-xl px-6 md:px-10 py-6 md:py-8 shadow-xl font-bold mt-8 border-0"
+              className="bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all text-sm md:text-xl px-4 md:px-10 py-6 md:py-8 shadow-xl font-bold mt-8 border-0 w-full max-w-2xl mx-auto"
               onClick={scrollToOffer}
             >
               ✨ Quero Transformar Minha Maternidade Agora
