@@ -81,14 +81,14 @@ const CartRecovery2 = () => {
             Pense Nisso...
           </h2>
           
-          <div className="space-y-4 text-lg text-muted-foreground">
-            <p>☕ Uma ida ao shopping com seu bebê: R$ 80~150</p>
-            <p>🍕 Um delivery de pizza: R$ 60~100</p>
-            <p>💅 Fazer as unhas: R$ 50~80</p>
-            <p className="pt-4 text-xl font-bold text-amber-600">
+          <div className="space-y-4 text-base md:text-lg text-muted-foreground">
+            <p>• Uma ida ao shopping com seu bebê: R$ 80~150</p>
+            <p>• Um delivery de pizza: R$ 60~100</p>
+            <p>• Fazer as unhas: R$ 50~80</p>
+            <p className="pt-4 text-lg md:text-xl font-bold text-amber-600">
               O Mamãe Zen custa apenas R$ {cartData?.plan === 'lifetime' ? '49,90 (UMA VEZ SÓ)' : '19,99 por mês'}
             </p>
-            <p className="text-foreground font-semibold">
+            <p className="text-foreground font-semibold text-base md:text-lg">
               Menos que uma pizza, mas vale anos de tranquilidade!
             </p>
           </div>
@@ -137,14 +137,14 @@ const CartRecovery2 = () => {
         <div className="space-y-4 mb-8">
           <Button 
             size="lg" 
-            className="w-full text-xl py-8 bg-gradient-primary text-white hover:scale-105 transition-all shadow-xl font-bold animate-pulse"
+            className="w-full text-lg md:text-xl py-8 bg-gradient-primary text-white hover:scale-105 transition-all shadow-xl font-bold animate-pulse px-4"
             onClick={handleFinalChance}
           >
-            💝 Sim! Quero Aproveitar Essa Última Chance
+            Sim! Quero Aproveitar Essa Última Chance
           </Button>
           
-          <p className="text-center text-sm text-muted-foreground">
-            🔒 Garantia de 7 dias • Acesso imediato • Sem riscos
+          <p className="text-center text-sm text-muted-foreground px-4">
+            Garantia de 7 dias • Acesso imediato • Sem riscos
           </p>
 
           <button

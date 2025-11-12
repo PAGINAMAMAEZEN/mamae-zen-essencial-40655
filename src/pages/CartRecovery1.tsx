@@ -147,9 +147,9 @@ const CartRecovery1 = () => {
         </div>
 
         {/* Prova Social */}
-        <div className="mt-8 text-center text-sm text-muted-foreground">
-          <p>🔒 Mais de 10.000 mães já fizeram essa escolha</p>
-          <p className="mt-2">⚡ Acesso imediato após a confirmação</p>
+        <div className="mt-8 text-center text-sm text-muted-foreground px-4">
+          <p>Mais de 10.000 mães já fizeram essa escolha</p>
+          <p className="mt-2">Acesso imediato após a confirmação</p>
         </div>
       </div>
     </div>

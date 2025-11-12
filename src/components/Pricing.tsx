@@ -194,10 +194,10 @@ const Pricing = () => {
               </div>
 
               {/* Trust Badges */}
-              <div className="text-center text-xs md:text-sm text-muted-foreground space-y-1">
-                <p>🔒 Pagamento 100% seguro e criptografado</p>
-                <p>⚡ Acesso imediato após a confirmação</p>
-                <p>📱 Funciona em celular, tablet e computador</p>
+              <div className="text-center text-xs md:text-sm text-muted-foreground space-y-1 px-2">
+                <p>Pagamento 100% seguro e criptografado</p>
+                <p>Acesso imediato após a confirmação</p>
+                <p>Funciona em celular, tablet e computador</p>
               </div>
             </div>
           </div>

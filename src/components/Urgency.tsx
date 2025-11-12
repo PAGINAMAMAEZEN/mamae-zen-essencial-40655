@@ -5,9 +5,9 @@ const Urgency = () => {
   return (
     <section className="py-12 md:py-16 px-4 bg-destructive/5">
       <div className="container mx-auto max-w-5xl">
-        <Card className="bg-gradient-to-br from-destructive/10 to-orange-500/10 border-destructive/20 p-8 md:p-12">
+        <Card className="bg-gradient-to-br from-destructive/10 to-orange-500/10 border-destructive/20 p-6 md:p-12">
           <div className="text-center space-y-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-destructive/20 rounded-full text-destructive font-bold text-sm md:text-base">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-primary rounded-full text-white font-bold text-sm md:text-base shadow-lg">
               <AlertTriangle className="w-5 h-5" />
               <span>ATENÇÃO: Não Deixe Para Depois</span>
             </div>
@@ -43,12 +43,12 @@ const Urgency = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg mt-8">
-              <p className="text-base md:text-lg font-semibold text-foreground">
+            <div className="bg-white rounded-xl p-6 md:p-8 shadow-lg mt-8">
+              <p className="text-base md:text-xl font-bold text-foreground leading-relaxed">
                 <span className="text-destructive">Você pode continuar sofrendo sozinha</span>, 
                 pesquisando em sites duvidosos, perdendo sono com cada dúvida...
               </p>
-              <p className="text-base md:text-lg font-bold text-primary mt-4">
+              <p className="text-base md:text-xl font-black text-primary mt-4 leading-relaxed">
                 OU pode ter toda a segurança e tranquilidade que você merece 
                 <span className="block mt-2">por menos de R$ 2,00 por mês (no plano vitalício).</span>
               </p>
