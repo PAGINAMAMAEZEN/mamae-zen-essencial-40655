@@ -54,11 +54,10 @@ i18n
   });
 
 // Set language based on IP after initialization
+// Always detect and update language based on IP to handle VPN changes
 detectLanguageFromIP().then(lang => {
-  const storedLang = localStorage.getItem('i18nextLng');
-  if (!storedLang || storedLang === 'pt') {
-    i18n.changeLanguage(lang);
-  }
+  i18n.changeLanguage(lang);
+  localStorage.setItem('i18nextLng', lang);
 });
 
 export default i18n;
