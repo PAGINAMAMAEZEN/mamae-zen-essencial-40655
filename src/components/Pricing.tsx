@@ -130,7 +130,7 @@ const Pricing = () => {
                   
                   <Button 
                     size="lg" 
-                    className="w-full text-xs sm:text-sm md:text-base lg:text-lg py-5 md:py-7 bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all shadow-xl font-bold rounded-xl border-0 px-3 sm:px-4 leading-tight break-words hyphens-auto"
+                    className="w-full text-sm md:text-lg py-5 md:py-7 bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all shadow-xl font-bold rounded-xl border-0 px-4"
                     onClick={() => handlePlanClick('lifetime', 'https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054')}
                   >
                     {t('pricing.ctaLifetime')}
@@ -147,6 +147,38 @@ const Pricing = () => {
                 </div>
               </div>
 
+              {/* Monthly Option */}
+              <div className="text-center p-4 md:p-6 bg-primary/5 backdrop-blur rounded-2xl border-2 border-primary/30 shadow-lg">
+                <p className="text-xs md:text-base text-muted-foreground mb-2">
+                  {t('pricing.monthlyQuestion')}
+                </p>
+                
+                <div className="mb-2">
+                  <div className="inline-flex items-baseline gap-1 justify-center">
+                    <span className="text-lg md:text-2xl font-medium text-muted-foreground line-through">
+                      {t('pricing.monthlyOldPrice')}
+                    </span>
+                  </div>
+                  <div className="mt-1">
+                    <span className="text-3xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+                      {t('pricing.monthlyPrice')}
+                    </span>
+                    <span className="text-base md:text-lg text-muted-foreground">{t('pricing.monthlyPeriod')}</span>
+                  </div>
+                </div>
+                
+                <p className="text-xs md:text-sm text-muted-foreground mb-4">
+                  {t('pricing.monthlyAfter')}
+                </p>
+                
+                <Button 
+                  size="lg" 
+                  className="w-full text-xs md:text-base py-4 md:py-6 bg-gradient-primary text-white hover:scale-105 transition-all shadow-lg rounded-xl font-bold border-0 px-4"
+                  onClick={() => handlePlanClick('monthly', 'https://pay.kirvano.com/d5b9bd49-16d8-4039-b097-0c428eb0b0f5')}
+                >
+                  {t('pricing.ctaMonthly')}
+                </Button>
+              </div>
 
               {/* Guarantee */}
               <div className="bg-primary/5 backdrop-blur rounded-xl p-3 md:p-5 text-center border border-primary/20">
