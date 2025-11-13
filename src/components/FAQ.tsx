@@ -4,55 +4,34 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const faqs = [
-  {
-    question: "Como funciona o acesso vitalício?",
-    answer: "Você paga uma única vez R$ 97,90 e tem acesso para sempre a todos os 6 módulos, incluindo todas as atualizações futuras. Sem mensalidades, sem custos ocultos."
-  },
-  {
-    question: "O app funciona fora do Brasil?",
-    answer: "Sim! O Mamãe Zen foi especialmente desenvolvido para mães que moram fora do Brasil. Funciona em qualquer país e o botão de emergência localiza hospitais pediátricos na sua região."
-  },
-  {
-    question: "Preciso de internet para usar?",
-    answer: "A maioria dos guias e conteúdos podem ser acessados offline após o primeiro download. Apenas o botão de emergência e atualizações precisam de internet."
-  },
-  {
-    question: "E se eu não gostar?",
-    answer: "Oferecemos 7 dias de garantia total. Se por qualquer motivo você não estiver satisfeita, devolvemos 100% do seu investimento, sem perguntas."
-  },
-  {
-    question: "O guia de medicamentos é confiável?",
-    answer: "Sim! Foi desenvolvido por pediatras e farmacêuticos com base em evidências científicas. Mas sempre consulte seu pediatra antes de administrar qualquer medicamento."
-  },
-  {
-    question: "Posso usar em mais de um dispositivo?",
-    answer: "Sim! Você pode acessar sua conta em quantos dispositivos quiser - celular, tablet, etc."
-  },
-  {
-    question: "Como funciona o botão de emergência?",
-    answer: "Com um clique, o app localiza os hospitais pediátricos mais próximos de você e traça a rota mais segura usando GPS. Perfeito para momentos de urgência."
-  },
-  {
-    question: "Recebo atualizações de conteúdo?",
-    answer: "Sim! Estamos constantemente adicionando novos guias, áudios e e-books. Todas as atualizações são gratuitas para quem tem acesso vitalício."
-  }
-];
+import { useTranslation } from "react-i18next";
 
 const FAQ = () => {
+  const { t } = useTranslation();
+  
+  const faqs = [
+    { question: t('faq.q1'), answer: t('faq.a1') },
+    { question: t('faq.q2'), answer: t('faq.a2') },
+    { question: t('faq.q3'), answer: t('faq.a3') },
+    { question: t('faq.q4'), answer: t('faq.a4') },
+    { question: t('faq.q5'), answer: t('faq.a5') },
+    { question: t('faq.q6'), answer: t('faq.a6') },
+    { question: t('faq.q7'), answer: t('faq.a7') },
+    { question: t('faq.q8'), answer: t('faq.a8') }
+  ];
+  
   return (
     <section className="py-12 md:py-20 px-4 bg-background">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-10 md:mb-12 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
-            <span className="text-foreground">Dúvidas </span>
+            <span className="text-foreground">{t('faq.title1')} </span>
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Frequentes
+              {t('faq.title2')}
             </span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground px-4">
-            Tudo que você precisa saber antes de garantir seu acesso
+            {t('faq.subtitle')}
           </p>
         </div>
 

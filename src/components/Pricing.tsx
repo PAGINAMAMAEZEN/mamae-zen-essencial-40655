@@ -4,19 +4,10 @@ import { CheckCircle2, Shield, Sparkles } from "lucide-react";
 import { useCartAbandonment } from "@/hooks/useCartAbandonment";
 import { useState, useEffect } from "react";
 import { UrgencyModal } from "@/components/UrgencyModal";
-
-const includes = [
-  "Guias Práticos Completos",
-  "Manual de Medicamentos Seguros",
-  "Módulo Desenvolvimento & Autismo",
-  "Botão de Emergência com GPS",
-  "Biblioteca de Áudios Relaxantes",
-  "E-books Premium Exclusivos",
-  "Atualizações Vitalícias",
-  "Suporte Prioritário"
-];
+import { useTranslation } from "react-i18next";
 
 const Pricing = () => {
+  const { t } = useTranslation();
   const { saveCartIntent } = useCartAbandonment();
   const [userCity, setUserCity] = useState<string>("");
   const [userState, setUserState] = useState<string>("");
@@ -61,19 +52,19 @@ const Pricing = () => {
         <div className="text-center mb-6 md:mb-12 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 rounded-full text-primary font-medium mb-3 text-xs md:text-base">
             <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
-            <span>Oferta Especial de Lançamento</span>
+            <span>{t('pricing.badge')}</span>
           </div>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 px-2 leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              6 Módulos Completos
+              {t('pricing.title1')}
             </span>
             <br />
             <span className="text-foreground">
-              Por Apenas R$ 49,90
+              {t('pricing.title2')}
             </span>
           </h2>
           <p className="text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
-            Investimento único para ter tudo que você precisa por toda a vida
+            {t('pricing.subtitle')}
           </p>
         </div>
 
@@ -84,15 +75,24 @@ const Pricing = () => {
             <div className="space-y-4 px-1">
               <div className="text-center lg:text-left">
                 <h3 className="text-lg md:text-2xl font-bold mb-1.5 bg-gradient-primary bg-clip-text text-transparent">
-                  Acesso Completo Inclui:
+                  {t('pricing.includesTitle')}
                 </h3>
                 <p className="text-xs md:text-base text-muted-foreground">
-                  Todos os módulos, para sempre
+                  {t('pricing.includesSubtitle')}
                 </p>
               </div>
 
               <div className="space-y-2.5">
-                {includes.map((item, index) => (
+                {[
+                  t('pricing.include1'),
+                  t('pricing.include2'),
+                  t('pricing.include3'),
+                  t('pricing.include4'),
+                  t('pricing.include5'),
+                  t('pricing.include6'),
+                  t('pricing.include7'),
+                  t('pricing.include8')
+                ].map((item, index) => (
                   <div 
                     key={index}
                     className="flex items-start gap-2 animate-fade-in"
@@ -110,22 +110,22 @@ const Pricing = () => {
               {/* Lifetime Access - Primary Option */}
               <div className="relative mt-3 md:mt-0">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-primary text-white px-3 py-1 rounded-full text-xs md:text-sm font-bold shadow-lg z-10 whitespace-nowrap">
-                  ACESSO VITALÍCIO
+                  {t('pricing.lifetimeBadge')}
                 </div>
                 
                 <div className="text-center p-4 md:p-8 bg-gradient-primary rounded-2xl text-white shadow-2xl mt-1.5">
                   <p className="text-xs md:text-base text-white/90 mb-2">
-                    De R$ 197 por apenas
+                    {t('pricing.from')}
                   </p>
                   
                   <div className="mb-2">
                     <span className="text-4xl sm:text-6xl md:text-7xl font-bold text-white drop-shadow-lg">
-                      R$ 49,90
+                      {t('pricing.price')}
                     </span>
                   </div>
                   
                   <p className="text-xs md:text-base text-white/90 font-semibold mb-3 md:mb-6">
-                    Pagamento único • Acesso vitalício
+                    {t('pricing.paymentInfo')}
                   </p>
                   
                   <Button 
@@ -133,15 +133,15 @@ const Pricing = () => {
                     className="w-full text-sm md:text-lg py-5 md:py-7 bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all shadow-xl font-bold rounded-xl border-0 px-4"
                     onClick={() => handlePlanClick('lifetime', 'https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054')}
                   >
-                    Garantir Acesso Vitalício Agora
+                    {t('pricing.ctaLifetime')}
                   </Button>
                   
                   <div className="mt-3 space-y-0.5">
                     <p className="text-xs md:text-sm text-white/90">
-                      ✓ Direito a todas as atualizações futuras
+                      {t('pricing.benefit1')}
                     </p>
                     <p className="text-xs md:text-sm text-white/90">
-                      ✓ Sem mensalidades, pague uma vez só
+                      {t('pricing.benefit2')}
                     </p>
                   </div>
                 </div>
@@ -150,25 +150,25 @@ const Pricing = () => {
               {/* Monthly Option */}
               <div className="text-center p-4 md:p-6 bg-primary/5 backdrop-blur rounded-2xl border-2 border-primary/30 shadow-lg">
                 <p className="text-xs md:text-base text-muted-foreground mb-2">
-                  Prefere pagar mensalmente?
+                  {t('pricing.monthlyQuestion')}
                 </p>
                 
                 <div className="mb-2">
                   <div className="inline-flex items-baseline gap-1 justify-center">
                     <span className="text-lg md:text-2xl font-medium text-muted-foreground line-through">
-                      R$ 29,90
+                      {t('pricing.monthlyOldPrice')}
                     </span>
                   </div>
                   <div className="mt-1">
                     <span className="text-3xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                      R$ 19,99
+                      {t('pricing.monthlyPrice')}
                     </span>
-                    <span className="text-base md:text-lg text-muted-foreground">/mês</span>
+                    <span className="text-base md:text-lg text-muted-foreground">{t('pricing.monthlyPeriod')}</span>
                   </div>
                 </div>
                 
                 <p className="text-xs md:text-sm text-muted-foreground mb-4">
-                  Após o primeiro período: R$ 29,90/mês
+                  {t('pricing.monthlyAfter')}
                 </p>
                 
                 <Button 
@@ -176,7 +176,7 @@ const Pricing = () => {
                   className="w-full text-xs md:text-base py-4 md:py-6 bg-gradient-primary text-white hover:scale-105 transition-all shadow-lg rounded-xl font-bold border-0 px-4"
                   onClick={() => handlePlanClick('monthly', 'https://pay.kirvano.com/d5b9bd49-16d8-4039-b097-0c428eb0b0f5')}
                 >
-                  💝 Começar por R$ 19,99/mês
+                  {t('pricing.ctaMonthly')}
                 </Button>
               </div>
 
@@ -185,19 +185,19 @@ const Pricing = () => {
                 <div className="flex items-center justify-center gap-2 mb-1">
                   <Shield className="text-primary flex-shrink-0 w-4 h-4 md:w-5 md:h-5" />
                   <span className="font-bold text-foreground text-xs md:text-base">
-                    Garantia de 7 Dias
+                    {t('pricing.guarantee')}
                   </span>
                 </div>
                 <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-                  Experimente sem riscos. Não gostar? Devolvemos 100% do valor
+                  {t('pricing.guaranteeText')}
                 </p>
               </div>
 
               {/* Trust Badges */}
               <div className="text-center text-xs md:text-sm text-muted-foreground space-y-1 px-2">
-                <p>Pagamento 100% seguro e criptografado</p>
-                <p>Acesso imediato após a confirmação</p>
-                <p>Funciona em celular, tablet e computador</p>
+                <p>{t('pricing.trust1')}</p>
+                <p>{t('pricing.trust2')}</p>
+                <p>{t('pricing.trust3')}</p>
               </div>
             </div>
           </div>
@@ -206,7 +206,7 @@ const Pricing = () => {
         {/* Social Proof */}
         <div className="mt-6 md:mt-12 text-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
           <p className="text-xs md:text-base text-muted-foreground mb-3 px-2">
-            Mais de 10.000 mães já transformaram suas maternidades
+            {t('pricing.socialProof')}
           </p>
           <div className="flex items-center justify-center gap-2 flex-wrap px-2">
             <div className="flex -space-x-2">
@@ -220,7 +220,7 @@ const Pricing = () => {
               ))}
             </div>
             <p className="text-xs md:text-sm text-foreground font-medium">
-              +10.000 mães satisfeitas
+              {t('pricing.socialProofShort')}
             </p>
           </div>
         </div>

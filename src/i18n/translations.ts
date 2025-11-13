@@ -2,276 +2,234 @@ export const translations = {
   pt: {
     translation: {
       hero: {
-        title: "Tudo Que Sua Maternidade Precisa em Um App Só",
-        subtitle: "Guias completos, medicamentos seguros, localização de hospitais e áudios relaxantes. Tudo para cuidar do seu bebê com segurança.",
-        cta: "Garantir Meu Acesso Vitalício",
-        ctaSecondary: "Ver Como Funciona",
+        badge: "App Premium de Maternidade",
+        title: "Mamãe Zen",
+        subtitle: "Tudo Que Sua Maternidade Precisa",
+        tagline: "em Um App Só",
+        description: "Guias completos, medicamentos seguros, localização de hospitais, áudios relaxantes e muito mais. Tudo para você cuidar do seu bebê com segurança e tranquilidade.",
+        cta: "Quero Acesso Vitalício",
+        ctaSecondary: "Conhecer os Módulos",
         benefit1: "Acesso Vitalício",
-        benefit2: "Garantia de 7 Dias",
-        benefit3: "Suporte 24/7"
-      },
-      modules: {
-        title: "6 Módulos Completos em Um Só App",
-        subtitle: "Tudo que você precisa para cuidar do seu bebê com segurança e tranquilidade",
-        module1: {
-          title: "Guia de Cuidados Básicos",
-          desc: "Técnicas comprovadas para arrotar, aliviar cólicas e estabelecer rotina de sono"
-        },
-        module2: {
-          title: "Medicamentos Seguros",
-          desc: "Guia completo de remédios aprovados, dosagens corretas e quando usar"
-        },
-        module3: {
-          title: "Sinais de Autismo",
-          desc: "Identificação precoce de sinais e marcos de desenvolvimento esperados"
-        },
-        module4: {
-          title: "Hospitais Próximos",
-          desc: "Localize hospitais pediátricos instantaneamente com rotas seguras"
-        },
-        module5: {
-          title: "Áudios Relaxantes",
-          desc: "Sons comprovados para acalmar bebês e facilitar o sono"
-        },
-        module6: {
-          title: "E-books Premium",
-          desc: "Biblioteca completa de recursos sobre maternidade e desenvolvimento"
-        }
-      },
-      demo: {
-        title: "Um App Que Realmente Resolve",
-        feature1: "Interface simples e intuitiva",
-        feature2: "Funciona offline quando necessário",
-        feature3: "Atualizações constantes de conteúdo"
-      },
-      testimonials: {
-        title: "Mães Como Você Já Estão Usando"
+        benefit2: "6 Módulos Completos",
+        benefit3: "Garantia 7 Dias"
       },
       pricing: {
-        title: "6 em 1 Por Menos Que Uma Consulta",
-        subtitle: "Investimento único de R$ 197 para acesso vitalício a TODOS os módulos",
-        price: "197",
-        period: "pagamento único",
-        feature1: "6 módulos completos",
-        feature2: "Acesso vitalício",
-        feature3: "Atualizações gratuitas",
-        feature4: "Suporte 24/7",
-        feature5: "Garantia de 7 dias",
-        cta: "Quero Ter Acesso Agora",
-        guarantee: "Garantia Incondicional de 7 Dias",
-        guaranteeText: "Teste todos os módulos por 7 dias. Se não for tudo que prometemos, devolvemos 100% do seu investimento."
+        badge: "Oferta Especial de Lançamento",
+        title1: "6 Módulos Completos",
+        title2: "Por Apenas R$ 49,90",
+        subtitle: "Investimento único para ter tudo que você precisa por toda a vida",
+        includesTitle: "Acesso Completo Inclui:",
+        includesSubtitle: "Todos os módulos, para sempre",
+        include1: "Guias Práticos Completos",
+        include2: "Manual de Medicamentos Seguros",
+        include3: "Módulo Desenvolvimento & Autismo",
+        include4: "Botão de Emergência com GPS",
+        include5: "Biblioteca de Áudios Relaxantes",
+        include6: "E-books Premium Exclusivos",
+        include7: "Atualizações Vitalícias",
+        include8: "Suporte Prioritário",
+        lifetimeBadge: "ACESSO VITALÍCIO",
+        from: "De R$ 197 por apenas",
+        price: "R$ 49,90",
+        paymentInfo: "Pagamento único • Acesso vitalício",
+        ctaLifetime: "Garantir Acesso Vitalício Agora",
+        benefit1: "✓ Direito a todas as atualizações futuras",
+        benefit2: "✓ Sem mensalidades, pague uma vez só",
+        monthlyQuestion: "Prefere pagar mensalmente?",
+        monthlyOldPrice: "R$ 29,90",
+        monthlyPrice: "R$ 19,99",
+        monthlyPeriod: "/mês",
+        monthlyAfter: "Após o primeiro período: R$ 29,90/mês",
+        ctaMonthly: "💝 Começar por R$ 19,99/mês",
+        guarantee: "Garantia de 7 Dias",
+        guaranteeText: "Experimente sem riscos. Não gostar? Devolvemos 100% do valor",
+        trust1: "Pagamento 100% seguro e criptografado",
+        trust2: "Acesso imediato após a confirmação",
+        trust3: "Funciona em celular, tablet e computador",
+        socialProof: "Mais de 10.000 mães já transformaram suas maternidades",
+        socialProofShort: "+10.000 mães satisfeitas"
       },
       faq: {
-        title: "Perguntas Frequentes"
+        title1: "Dúvidas",
+        title2: "Frequentes",
+        subtitle: "Tudo que você precisa saber antes de garantir seu acesso",
+        q1: "Como funciona o acesso vitalício?",
+        a1: "Você paga uma única vez R$ 97,90 e tem acesso para sempre a todos os 6 módulos, incluindo todas as atualizações futuras. Sem mensalidades, sem custos ocultos.",
+        q2: "O app funciona fora do Brasil?",
+        a2: "Sim! O Mamãe Zen foi especialmente desenvolvido para mães que moram fora do Brasil. Funciona em qualquer país e o botão de emergência localiza hospitais pediátricos na sua região.",
+        q3: "Preciso de internet para usar?",
+        a3: "A maioria dos guias e conteúdos podem ser acessados offline após o primeiro download. Apenas o botão de emergência e atualizações precisam de internet.",
+        q4: "E se eu não gostar?",
+        a4: "Oferecemos 7 dias de garantia total. Se por qualquer motivo você não estiver satisfeita, devolvemos 100% do seu investimento, sem perguntas.",
+        q5: "O guia de medicamentos é confiável?",
+        a5: "Sim! Foi desenvolvido por pediatras e farmacêuticos com base em evidências científicas. Mas sempre consulte seu pediatra antes de administrar qualquer medicamento.",
+        q6: "Posso usar em mais de um dispositivo?",
+        a6: "Sim! Você pode acessar sua conta em quantos dispositivos quiser - celular, tablet, etc.",
+        q7: "Como funciona o botão de emergência?",
+        a7: "Com um clique, o app localiza os hospitais pediátricos mais próximos de você e traça a rota mais segura usando GPS. Perfeito para momentos de urgência.",
+        q8: "Recebo atualizações de conteúdo?",
+        a8: "Sim! Estamos constantemente adicionando novos guias, áudios e e-books. Todas as atualizações são gratuitas para quem tem acesso vitalício."
       },
-      finalCta: {
-        title: "Pronta Para Ter Mais Segurança e Tranquilidade?",
-        subtitle: "Junte-se a milhares de mães que já cuidam dos seus bebês com mais confiança",
-        cta: "Sim, Quero Ter Acesso Vitalício Por R$ 197"
-      },
-      footer: {
-        description: "App premium de maternidade. Tudo que você precisa para cuidar do seu bebê com segurança e tranquilidade.",
-        quickLinks: "Links Rápidos",
-        modules: "Módulos",
-        pricing: "Preços",
-        privacy: "Política de Privacidade",
-        terms: "Termos de Uso",
-        support: "Suporte",
-        hours: "Atendimento: 24/7",
-        rights: "Todos os direitos reservados.",
-        madeWith: "Desenvolvido com ❤️ para mães do mundo todo"
-      },
-      privacy: {
-        title: "Política de Privacidade",
-        lastUpdate: "Última atualização: 28 de outubro de 2025"
-      },
-      terms: {
-        title: "Termos de Uso",
-        lastUpdate: "Última atualização: 28 de outubro de 2025"
+      testimonials: {
+        title1: "Mais de 10.000 Mães",
+        title2: "Já Confiam no Mamãe Zen",
+        subtitle: "Especialmente mães que moram fora do Brasil e precisam de suporte confiável"
       }
     }
   },
   en: {
     translation: {
       hero: {
-        title: "Everything Your Motherhood Needs in One App",
-        subtitle: "Complete guides, safe medications, hospital location, and relaxing audios. Everything to care for your baby safely.",
-        cta: "Get My Lifetime Access",
-        ctaSecondary: "See How It Works",
+        badge: "Premium Motherhood App",
+        title: "Zen Mom",
+        subtitle: "Everything Your Motherhood Needs",
+        tagline: "in One App",
+        description: "Complete guides, safe medications, hospital locator, relaxing audios and much more. Everything to care for your baby safely and peacefully.",
+        cta: "Get Lifetime Access",
+        ctaSecondary: "See Modules",
         benefit1: "Lifetime Access",
-        benefit2: "7-Day Guarantee",
-        benefit3: "24/7 Support"
-      },
-      modules: {
-        title: "6 Complete Modules in One App",
-        subtitle: "Everything you need to care for your baby safely and peacefully",
-        module1: {
-          title: "Basic Care Guide",
-          desc: "Proven techniques for burping, relieving colic, and establishing sleep routines"
-        },
-        module2: {
-          title: "Safe Medications",
-          desc: "Complete guide of approved medications, correct dosages, and when to use"
-        },
-        module3: {
-          title: "Autism Signs",
-          desc: "Early identification of signs and expected developmental milestones"
-        },
-        module4: {
-          title: "Nearby Hospitals",
-          desc: "Instantly locate pediatric hospitals with safe routes"
-        },
-        module5: {
-          title: "Relaxing Audios",
-          desc: "Proven sounds to calm babies and facilitate sleep"
-        },
-        module6: {
-          title: "Premium E-books",
-          desc: "Complete library of resources on motherhood and development"
-        }
-      },
-      demo: {
-        title: "An App That Really Works",
-        feature1: "Simple and intuitive interface",
-        feature2: "Works offline when needed",
-        feature3: "Constant content updates"
-      },
-      testimonials: {
-        title: "Mothers Like You Are Already Using It"
+        benefit2: "6 Complete Modules",
+        benefit3: "7-Day Guarantee"
       },
       pricing: {
-        title: "6 in 1 For Less Than One Consultation",
-        subtitle: "One-time investment of $37 for lifetime access to ALL modules",
-        price: "37",
-        period: "one-time payment",
-        feature1: "6 complete modules",
-        feature2: "Lifetime access",
-        feature3: "Free updates",
-        feature4: "24/7 support",
-        feature5: "7-day guarantee",
-        cta: "I Want Access Now",
-        guarantee: "Unconditional 7-Day Guarantee",
-        guaranteeText: "Test all modules for 7 days. If it's not everything we promise, we'll refund 100% of your investment."
+        badge: "Special Launch Offer",
+        title1: "6 Complete Modules",
+        title2: "For Only $9.99",
+        subtitle: "One-time investment to have everything you need for life",
+        includesTitle: "Full Access Includes:",
+        includesSubtitle: "All modules, forever",
+        include1: "Complete Practical Guides",
+        include2: "Safe Medications Manual",
+        include3: "Development & Autism Module",
+        include4: "Emergency Button with GPS",
+        include5: "Relaxing Audio Library",
+        include6: "Exclusive Premium E-books",
+        include7: "Lifetime Updates",
+        include8: "Priority Support",
+        lifetimeBadge: "LIFETIME ACCESS",
+        from: "From $39 for only",
+        price: "$9.99",
+        paymentInfo: "One-time payment • Lifetime access",
+        ctaLifetime: "Get Lifetime Access Now",
+        benefit1: "✓ All future updates included",
+        benefit2: "✓ No monthly fees, pay once only",
+        monthlyQuestion: "Prefer monthly payments?",
+        monthlyOldPrice: "$5.99",
+        monthlyPrice: "$3.99",
+        monthlyPeriod: "/mo",
+        monthlyAfter: "After first period: $5.99/month",
+        ctaMonthly: "💝 Start at $3.99/month",
+        guarantee: "7-Day Guarantee",
+        guaranteeText: "Try risk-free. Not satisfied? We refund 100% of your money",
+        trust1: "100% secure and encrypted payment",
+        trust2: "Immediate access after confirmation",
+        trust3: "Works on mobile, tablet, and computer",
+        socialProof: "Over 10,000 mothers have already transformed their motherhood",
+        socialProofShort: "+10,000 satisfied mothers"
       },
       faq: {
-        title: "Frequently Asked Questions"
+        title1: "Frequently",
+        title2: "Asked Questions",
+        subtitle: "Everything you need to know before getting your access",
+        q1: "How does lifetime access work?",
+        a1: "You pay once $19.90 and get forever access to all 6 modules, including all future updates. No monthly fees, no hidden costs.",
+        q2: "Does the app work outside Brazil?",
+        a2: "Yes! Zen Mom was specially developed for mothers living abroad. It works in any country and the emergency button locates pediatric hospitals in your area.",
+        q3: "Do I need internet to use it?",
+        a3: "Most guides and content can be accessed offline after the first download. Only the emergency button and updates require internet.",
+        q4: "What if I don't like it?",
+        a4: "We offer a full 7-day guarantee. If for any reason you're not satisfied, we refund 100% of your investment, no questions asked.",
+        q5: "Is the medication guide reliable?",
+        a5: "Yes! It was developed by pediatricians and pharmacists based on scientific evidence. But always consult your pediatrician before administering any medication.",
+        q6: "Can I use it on multiple devices?",
+        a6: "Yes! You can access your account on as many devices as you want - phone, tablet, etc.",
+        q7: "How does the emergency button work?",
+        a7: "With one click, the app locates the nearest pediatric hospitals and maps the safest route using GPS. Perfect for urgent moments.",
+        q8: "Do I receive content updates?",
+        a8: "Yes! We're constantly adding new guides, audios, and e-books. All updates are free for those with lifetime access."
       },
-      finalCta: {
-        title: "Ready to Have More Security and Peace of Mind?",
-        subtitle: "Join thousands of mothers who already care for their babies with more confidence",
-        cta: "Yes, I Want Lifetime Access For $37"
-      },
-      footer: {
-        description: "Premium motherhood app. Everything you need to care for your baby safely and peacefully.",
-        quickLinks: "Quick Links",
-        modules: "Modules",
-        pricing: "Pricing",
-        privacy: "Privacy Policy",
-        terms: "Terms of Use",
-        support: "Support",
-        hours: "Available: 24/7",
-        rights: "All rights reserved.",
-        madeWith: "Made with ❤️ for mothers worldwide"
-      },
-      privacy: {
-        title: "Privacy Policy",
-        lastUpdate: "Last updated: October 28, 2025"
-      },
-      terms: {
-        title: "Terms of Use",
-        lastUpdate: "Last updated: October 28, 2025"
+      testimonials: {
+        title1: "Over 10,000 Mothers",
+        title2: "Already Trust Zen Mom",
+        subtitle: "Especially mothers living abroad who need reliable support"
       }
     }
   },
   es: {
     translation: {
       hero: {
-        title: "Todo Lo Que Tu Maternidad Necesita en Una Sola App",
-        subtitle: "Guías completas, medicamentos seguros, localización de hospitales y audios relajantes. Todo para cuidar a tu bebé con seguridad.",
-        cta: "Obtener Mi Acceso de Por Vida",
-        ctaSecondary: "Ver Cómo Funciona",
+        badge: "App Premium de Maternidad",
+        title: "Mamá Zen",
+        subtitle: "Todo Lo Que Tu Maternidad Necesita",
+        tagline: "en Una Sola App",
+        description: "Guías completas, medicamentos seguros, localización de hospitales, audios relajantes y mucho más. Todo para cuidar a tu bebé con seguridad y tranquilidad.",
+        cta: "Quiero Acceso de Por Vida",
+        ctaSecondary: "Ver Módulos",
         benefit1: "Acceso de Por Vida",
-        benefit2: "Garantía de 7 Días",
-        benefit3: "Soporte 24/7"
-      },
-      modules: {
-        title: "6 Módulos Completos en Una Sola App",
-        subtitle: "Todo lo que necesitas para cuidar a tu bebé con seguridad y tranquilidad",
-        module1: {
-          title: "Guía de Cuidados Básicos",
-          desc: "Técnicas probadas para eructar, aliviar cólicos y establecer rutinas de sueño"
-        },
-        module2: {
-          title: "Medicamentos Seguros",
-          desc: "Guía completa de medicamentos aprobados, dosis correctas y cuándo usar"
-        },
-        module3: {
-          title: "Señales de Autismo",
-          desc: "Identificación temprana de señales e hitos de desarrollo esperados"
-        },
-        module4: {
-          title: "Hospitales Cercanos",
-          desc: "Localiza hospitales pediátricos instantáneamente con rutas seguras"
-        },
-        module5: {
-          title: "Audios Relajantes",
-          desc: "Sonidos probados para calmar bebés y facilitar el sueño"
-        },
-        module6: {
-          title: "E-books Premium",
-          desc: "Biblioteca completa de recursos sobre maternidad y desarrollo"
-        }
-      },
-      demo: {
-        title: "Una App Que Realmente Funciona",
-        feature1: "Interfaz simple e intuitiva",
-        feature2: "Funciona sin conexión cuando sea necesario",
-        feature3: "Actualizaciones constantes de contenido"
-      },
-      testimonials: {
-        title: "Madres Como Tú Ya Lo Están Usando"
+        benefit2: "6 Módulos Completos",
+        benefit3: "Garantía 7 Días"
       },
       pricing: {
-        title: "6 en 1 Por Menos Que Una Consulta",
-        subtitle: "Inversión única de $37 para acceso de por vida a TODOS los módulos",
-        price: "37",
-        period: "pago único",
-        feature1: "6 módulos completos",
-        feature2: "Acceso de por vida",
-        feature3: "Actualizaciones gratuitas",
-        feature4: "Soporte 24/7",
-        feature5: "Garantía de 7 días",
-        cta: "Quiero Acceso Ahora",
-        guarantee: "Garantía Incondicional de 7 Días",
-        guaranteeText: "Prueba todos los módulos durante 7 días. Si no es todo lo que prometemos, te devolvemos el 100% de tu inversión."
+        badge: "Oferta Especial de Lanzamiento",
+        title1: "6 Módulos Completos",
+        title2: "Por Solo $9.99",
+        subtitle: "Inversión única para tener todo lo que necesitas de por vida",
+        includesTitle: "Acceso Completo Incluye:",
+        includesSubtitle: "Todos los módulos, para siempre",
+        include1: "Guías Prácticas Completas",
+        include2: "Manual de Medicamentos Seguros",
+        include3: "Módulo Desarrollo y Autismo",
+        include4: "Botón de Emergencia con GPS",
+        include5: "Biblioteca de Audios Relajantes",
+        include6: "E-books Premium Exclusivos",
+        include7: "Actualizaciones de Por Vida",
+        include8: "Soporte Prioritario",
+        lifetimeBadge: "ACCESO DE POR VIDA",
+        from: "De $39 por solo",
+        price: "$9.99",
+        paymentInfo: "Pago único • Acceso de por vida",
+        ctaLifetime: "Obtener Acceso de Por Vida Ahora",
+        benefit1: "✓ Todas las actualizaciones futuras incluidas",
+        benefit2: "✓ Sin mensualidades, paga una sola vez",
+        monthlyQuestion: "¿Prefieres pagar mensualmente?",
+        monthlyOldPrice: "$5.99",
+        monthlyPrice: "$3.99",
+        monthlyPeriod: "/mes",
+        monthlyAfter: "Después del primer período: $5.99/mes",
+        ctaMonthly: "💝 Comenzar por $3.99/mes",
+        guarantee: "Garantía de 7 Días",
+        guaranteeText: "Prueba sin riesgos. ¿No te gusta? Te devolvemos el 100% del dinero",
+        trust1: "Pago 100% seguro y encriptado",
+        trust2: "Acceso inmediato después de la confirmación",
+        trust3: "Funciona en móvil, tablet y computadora",
+        socialProof: "Más de 10.000 madres ya han transformado su maternidad",
+        socialProofShort: "+10.000 madres satisfechas"
       },
       faq: {
-        title: "Preguntas Frecuentes"
+        title1: "Preguntas",
+        title2: "Frecuentes",
+        subtitle: "Todo lo que necesitas saber antes de obtener tu acceso",
+        q1: "¿Cómo funciona el acceso de por vida?",
+        a1: "Pagas una sola vez $19.90 y tienes acceso para siempre a todos los 6 módulos, incluyendo todas las actualizaciones futuras. Sin mensualidades, sin costos ocultos.",
+        q2: "¿La app funciona fuera de Brasil?",
+        a2: "¡Sí! Mamá Zen fue especialmente desarrollada para madres que viven en el extranjero. Funciona en cualquier país y el botón de emergencia localiza hospitales pediátricos en tu área.",
+        q3: "¿Necesito internet para usarla?",
+        a3: "La mayoría de las guías y contenidos pueden accederse sin conexión después de la primera descarga. Solo el botón de emergencia y las actualizaciones requieren internet.",
+        q4: "¿Y si no me gusta?",
+        a4: "Ofrecemos garantía completa de 7 días. Si por cualquier razón no estás satisfecha, te devolvemos el 100% de tu inversión, sin preguntas.",
+        q5: "¿La guía de medicamentos es confiable?",
+        a5: "¡Sí! Fue desarrollada por pediatras y farmacéuticos basándose en evidencia científica. Pero siempre consulta a tu pediatra antes de administrar cualquier medicamento.",
+        q6: "¿Puedo usarla en múltiples dispositivos?",
+        a6: "¡Sí! Puedes acceder a tu cuenta en cuantos dispositivos quieras - teléfono, tablet, etc.",
+        q7: "¿Cómo funciona el botón de emergencia?",
+        a7: "Con un clic, la app localiza los hospitales pediátricos más cercanos y traza la ruta más segura usando GPS. Perfecto para momentos de urgencia.",
+        q8: "¿Recibo actualizaciones de contenido?",
+        a8: "¡Sí! Constantemente estamos añadiendo nuevas guías, audios y e-books. Todas las actualizaciones son gratuitas para quienes tienen acceso de por vida."
       },
-      finalCta: {
-        title: "¿Lista Para Tener Más Seguridad y Tranquilidad?",
-        subtitle: "Únete a miles de madres que ya cuidan a sus bebés con más confianza",
-        cta: "Sí, Quiero Acceso de Por Vida Por $37"
-      },
-      footer: {
-        description: "App premium de maternidad. Todo lo que necesitas para cuidar a tu bebé con seguridad y tranquilidad.",
-        quickLinks: "Enlaces Rápidos",
-        modules: "Módulos",
-        pricing: "Precios",
-        privacy: "Política de Privacidad",
-        terms: "Términos de Uso",
-        support: "Soporte",
-        hours: "Disponible: 24/7",
-        rights: "Todos los derechos reservados.",
-        madeWith: "Hecho con ❤️ para madres de todo el mundo"
-      },
-      privacy: {
-        title: "Política de Privacidad",
-        lastUpdate: "Última actualización: 28 de octubre de 2025"
-      },
-      terms: {
-        title: "Términos de Uso",
-        lastUpdate: "Última actualización: 28 de octubre de 2025"
+      testimonials: {
+        title1: "Más de 10.000 Madres",
+        title2: "Ya Confían en Mamá Zen",
+        subtitle: "Especialmente madres que viven en el extranjero y necesitan soporte confiable"
       }
     }
   }

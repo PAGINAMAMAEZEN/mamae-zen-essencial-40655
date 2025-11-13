@@ -3,8 +3,10 @@ import { Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 import { useCartAbandonment } from "@/hooks/useCartAbandonment";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   const { saveCartIntent } = useCartAbandonment();
   const [userCity, setUserCity] = useState<string>("");
   const [userState, setUserState] = useState<string>("");
@@ -45,27 +47,26 @@ const Hero = () => {
           <div className="text-center lg:text-left space-y-4 md:space-y-8 animate-fade-in order-2 lg:order-1">
             <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 rounded-full text-primary font-medium text-xs md:text-base mx-auto lg:mx-0">
               <Sparkles className="w-4 h-4 md:w-[18px] md:h-[18px]" />
-              <span>App Premium de Maternidade</span>
+              <span>{t('hero.badge')}</span>
               <Sparkles className="w-4 h-4 md:w-[18px] md:h-[18px]" />
             </div>
 
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Mamãe Zen
+                {t('hero.title')}
               </span>
               <br />
               <span className="text-foreground">
-                Tudo Que Sua Maternidade Precisa
+                {t('hero.subtitle')}
               </span>
               <br />
               <span className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground">
-                em Um App Só
+                {t('hero.tagline')}
               </span>
             </h1>
 
             <p className="text-sm md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Guias completos, medicamentos seguros, localização de hospitais, áudios relaxantes 
-              e muito mais. Tudo para você cuidar do seu bebê com segurança e tranquilidade.
+              {t('hero.description')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-2.5 md:gap-4 justify-center lg:justify-start items-stretch sm:items-center">
@@ -74,7 +75,7 @@ const Hero = () => {
                 className="text-sm md:text-lg px-4 md:px-8 py-5 md:py-7 bg-gradient-primary text-white hover:scale-105 transition-all shadow-xl font-bold w-full sm:w-auto border-0"
                 onClick={scrollToOffer}
               >
-                Quero Acesso Vitalício
+                {t('hero.cta')}
               </Button>
               <Button 
                 size="lg" 
@@ -82,22 +83,22 @@ const Hero = () => {
                 className="text-sm md:text-lg px-4 md:px-8 py-5 md:py-7 border-2 border-primary/30 bg-primary/5 hover:bg-primary/10 text-foreground w-full sm:w-auto"
                 onClick={() => document.getElementById('modulos')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Conhecer os Módulos
+                {t('hero.ctaSecondary')}
               </Button>
             </div>
 
             <div className="flex flex-wrap items-center gap-3 md:gap-8 justify-center lg:justify-start text-xs md:text-sm">
               <div className="flex items-center gap-1.5">
                 <div className="w-2 h-2 rounded-full bg-primary"></div>
-                <span className="text-muted-foreground whitespace-nowrap">Acesso Vitalício</span>
+                <span className="text-muted-foreground whitespace-nowrap">{t('hero.benefit1')}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                <span className="text-muted-foreground whitespace-nowrap">6 Módulos Completos</span>
+                <span className="text-muted-foreground whitespace-nowrap">{t('hero.benefit2')}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <div className="w-2 h-2 rounded-full bg-accent"></div>
-                <span className="text-muted-foreground whitespace-nowrap">Garantia 7 Dias</span>
+                <span className="text-muted-foreground whitespace-nowrap">{t('hero.benefit3')}</span>
               </div>
             </div>
           </div>

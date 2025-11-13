@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const testimonials = [
   {
@@ -47,19 +48,21 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="py-12 md:py-20 px-4 bg-background">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-10 md:mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Mais de 10.000 Mães
+              {t('testimonials.title1')}
             </span>
             <br />
-            <span className="text-foreground text-xl sm:text-2xl md:text-3xl">Já Confiam no Mamãe Zen</span>
+            <span className="text-foreground text-xl sm:text-2xl md:text-3xl">{t('testimonials.title2')}</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
-            Especialmente mães que moram fora do Brasil e precisam de suporte confiável
+            {t('testimonials.subtitle')}
           </p>
         </div>
 
