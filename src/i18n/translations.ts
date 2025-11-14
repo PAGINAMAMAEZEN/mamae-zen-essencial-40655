@@ -32,7 +32,7 @@ export const translations = {
         from: "De R$ 197 por apenas",
         price: "R$ 49,90",
         paymentInfo: "Pagamento único • Acesso vitalício",
-        ctaLifetime: "Garantir Acesso Vitalício Agora",
+        ctaLifetime: "Quero ser uma Super Mamãe agora",
         benefit1: "✓ Direito a todas as atualizações futuras",
         benefit2: "✓ Sem mensalidades, pague uma vez só",
         monthlyQuestion: "Prefere pagar mensalmente?",
