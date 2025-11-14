@@ -130,7 +130,7 @@ const Pricing = () => {
                   
                   <Button 
                     size="lg" 
-                    className="w-full text-xs sm:text-sm md:text-base lg:text-lg py-5 md:py-7 bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all shadow-xl font-bold rounded-xl border-0 px-3 sm:px-4 leading-tight break-words hyphens-auto"
+                    className="w-full text-xs sm:text-sm md:text-base lg:text-lg py-5 md:py-7 bg-white text-primary hover:bg-white/95 hover:scale-105 transition-all shadow-xl font-bold rounded-xl border-0 px-3 sm:px-4 leading-tight break-words hyphens-auto whitespace-normal text-center"
                     onClick={() => handlePlanClick('lifetime', 'https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054')}
                   >
                     {t('pricing.ctaLifetime')}
