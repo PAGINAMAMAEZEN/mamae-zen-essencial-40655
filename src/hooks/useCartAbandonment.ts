@@ -41,7 +41,7 @@ export const useCartAbandonment = () => {
     return null;
   };
 
-  // Check for abandoned cart
+  // Check for abandoned cart (disabled auto-toast to prevent funnel interruption)
   useEffect(() => {
     const checkAbandonedCart = () => {
       const savedCart = localStorage.getItem('mamaeZenCart');
@@ -53,15 +53,7 @@ export const useCartAbandonment = () => {
         if (hoursSinceAbandonment > 1 && hoursSinceAbandonment < 168) {
           setHasAbandonedCart(true);
           setCartData(data);
-          
-          // Show recovery message
-          setTimeout(() => {
-            toast({
-              title: "🎁 Oferta Especial Para Você!",
-              description: `Notamos que você se interessou pelo plano ${data.plan === 'lifetime' ? 'vitalício' : 'mensal'}. Que tal garantir agora com desconto exclusivo?`,
-              duration: 10000,
-            });
-          }, 3000);
+          // Toast removed to prevent funnel interruption
         }
       }
     };
