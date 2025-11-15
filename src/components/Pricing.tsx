@@ -1,18 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Shield, Sparkles } from "lucide-react";
-import { useCartAbandonment } from "@/hooks/useCartAbandonment";
 import { useState, useEffect } from "react";
-import { UrgencyModal } from "@/components/UrgencyModal";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
   const { t } = useTranslation();
-  const { saveCartIntent } = useCartAbandonment();
+  const navigate = useNavigate();
   const [userCity, setUserCity] = useState<string>("");
   const [userState, setUserState] = useState<string>("");
-  const [showUrgencyModal, setShowUrgencyModal] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState<{ plan: 'lifetime' | 'monthly', url: string } | null>(null);
 
   useEffect(() => {
     // Get user's location from IP
@@ -30,19 +27,16 @@ const Pricing = () => {
   }, []);
 
   const handlePlanClick = (plan: 'lifetime' | 'monthly', url: string) => {
-    // Save cart intent for recovery
-    saveCartIntent(plan, userCity, userState);
+    // Save plan info and redirect to funnel
+    localStorage.setItem('mamaeZenPlan', JSON.stringify({ plan, url }));
     
-    // Show urgency modal
-    setSelectedPlan({ plan, url });
-    setShowUrgencyModal(true);
-  };
-
-  const handleConfirmPurchase = () => {
-    if (selectedPlan) {
-      window.open(selectedPlan.url, '_blank');
-      setShowUrgencyModal(false);
+    // Trigger Google Ads conversion
+    if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+      (window as any).gtag_report_conversion();
     }
+    
+    // Redirect to funnel
+    navigate('/vagas-encerradas');
   };
 
   return (
@@ -192,12 +186,6 @@ const Pricing = () => {
           </div>
         </div>
 
-        {/* Urgency Modal */}
-        <UrgencyModal 
-          open={showUrgencyModal}
-          onOpenChange={setShowUrgencyModal}
-          onConfirm={handleConfirmPurchase}
-        />
       </div>
     </section>
   );

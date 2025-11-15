@@ -49,6 +49,21 @@
 
       gtag('config', 'AW-17730164705');
     </script>
+    <!-- Google Ads Conversion Tracking -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
   </head>
 
   <body>
