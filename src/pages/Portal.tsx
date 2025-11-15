@@ -17,7 +17,7 @@ const Portal = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <Button
             onClick={() => navigate('/inicio')}
-            className="h-auto min-h-[56px] px-8 py-4 text-lg md:text-xl font-bold bg-pink-500 hover:bg-pink-600 text-white rounded-full shadow-2xl hover:scale-105 transition-all animate-pulse flex items-center justify-center text-center"
+            className="h-auto min-h-[60px] px-8 py-4 text-lg md:text-xl font-bold bg-pink-500 hover:bg-pink-600 text-white rounded-full shadow-2xl hover:scale-105 transition-all animate-pulse flex items-center justify-center text-center"
           >
             ✨ ENTRAR NO MUNDO MÁGICO MAMÃE ZEN ✨
           </Button>
