@@ -11,22 +11,9 @@ import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import SocialProofNotifications from "@/components/SocialProofNotifications";
-import { useCartAbandonment } from "@/hooks/useCartAbandonment";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
 const Index = () => {
-  const { hasAbandonedCart, checkAndRedirect } = useCartAbandonment();
-  const navigate = useNavigate();
-
-  // Check if user should be redirected to recovery funnel
-  useEffect(() => {
-    const redirectPath = checkAndRedirect();
-    if (redirectPath) {
-      navigate(redirectPath);
-    }
-  }, [checkAndRedirect, navigate]);
-
   useEffect(() => {
     // Track page view and engagement
     const handleScroll = () => {
@@ -57,14 +44,6 @@ const Index = () => {
       <FinalCTA />
       <Footer />
       <SocialProofNotifications />
-      
-      {hasAbandonedCart && (
-        <div className="fixed bottom-20 right-4 z-40 animate-bounce">
-          <div className="bg-gradient-primary text-white px-4 py-3 rounded-full shadow-2xl text-sm font-bold">
-            🎁 Desconto especial te esperando!
-          </div>
-        </div>
-      )}
     </main>
   );
 };

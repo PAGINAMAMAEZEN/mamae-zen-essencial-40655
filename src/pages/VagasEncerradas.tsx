@@ -34,7 +34,7 @@ const VagasEncerradas = () => {
   }, [navigate]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-50 to-red-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-b from-destructive/10 to-destructive/20 flex items-center justify-center p-4">
       <Card className="max-w-2xl w-full p-8 md:p-12 text-center space-y-6 border-red-200 shadow-2xl">
         <div className="flex justify-center">
           <div className="w-20 h-20 rounded-full bg-red-100 flex items-center justify-center">
