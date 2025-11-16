@@ -119,7 +119,7 @@ const VagaEncontrada = () => {
 
         <div className="pt-4 space-y-4">
           <Button
-            className="w-full h-auto min-h-[64px] text-lg md:text-xl py-6 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold rounded-xl shadow-2xl hover:scale-105 transition-all animate-pulse"
+            className="w-full h-auto px-6 py-4 md:py-6 text-base md:text-xl bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold rounded-xl shadow-2xl hover:scale-105 transition-all animate-pulse"
             onClick={handleSecureSpot}
           >
             SIM! QUERO GARANTIR MINHA VAGA AGORA

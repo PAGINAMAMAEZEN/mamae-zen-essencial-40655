@@ -2,17 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Heart, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-import { useCartAbandonment } from "@/hooks/useCartAbandonment";
 
 const ThankYou = () => {
   const navigate = useNavigate();
-  const { clearCart } = useCartAbandonment();
-
-  useEffect(() => {
-    // Limpar o carrinho abandonado
-    clearCart();
-  }, [clearCart]);
 
   const handleGoHome = () => {
     navigate("/");

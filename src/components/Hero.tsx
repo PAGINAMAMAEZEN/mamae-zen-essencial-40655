@@ -1,30 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
-import { useCartAbandonment } from "@/hooks/useCartAbandonment";
-import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
   const { t } = useTranslation();
-  const { saveCartIntent } = useCartAbandonment();
-  const [userCity, setUserCity] = useState<string>("");
-  const [userState, setUserState] = useState<string>("");
-
-  useEffect(() => {
-    fetch("https://ipapi.co/json/")
-      .then(res => res.json())
-      .then(data => {
-        if (data.city) {
-          setUserCity(data.city);
-          setUserState(data.region_code || "BR");
-        }
-      })
-      .catch(() => {});
-  }, []);
 
   const scrollToOffer = () => {
-    saveCartIntent('lifetime', userCity, userState);
     document.getElementById('oferta')?.scrollIntoView({ behavior: 'smooth' });
   };
 
